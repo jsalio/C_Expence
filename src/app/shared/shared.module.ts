@@ -5,6 +5,7 @@ import { NavigatorComponent } from './navigator/navigator.component';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { ModalModule } from 'ngx-bootstrap/modal';
+import { MessageComponent } from './message/message.component';
 
 @NgModule({
   imports: [
@@ -13,7 +14,7 @@ import { ModalModule } from 'ngx-bootstrap/modal';
     TooltipModule.forRoot(),
     ModalModule.forRoot(),
   ],
-  declarations: [NavigatorComponent],
-  exports: [NavigatorComponent, BsDropdownModule, TooltipModule, ModalModule]
+  declarations: [NavigatorComponent, MessageComponent],
+  exports: [NavigatorComponent, MessageComponent, BsDropdownModule, TooltipModule, ModalModule]
 })
 export class SharedModule { }

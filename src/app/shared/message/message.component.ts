@@ -10,6 +10,12 @@ import { BsModalRef } from 'ngx-bootstrap/modal/bs-modal-ref.service';
 export class MessageComponent {
 
   modalMessageRef: BsModalRef;
+  title = 'Title';
+  bodyText = 'Message';
+  closeBtnName = 'Close';
+  okBtnName = 'Ok';
+  warningBtnName = 'Retry';
+
   constructor(private modalService: BsModalService) { }
 
   openModal(template: TemplateRef<any>) {

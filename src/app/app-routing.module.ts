@@ -8,7 +8,7 @@ const routes: Routes = [
     pathMatch: 'full',
   },
   {
-    path: 'dashboard',
+    path: '',
     component: LayoutComponentComponent,
     children:
       [

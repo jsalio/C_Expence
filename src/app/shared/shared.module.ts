@@ -6,6 +6,7 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { MessageComponent } from './message/message.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   imports: [
@@ -13,6 +14,7 @@ import { MessageComponent } from './message/message.component';
     BsDropdownModule.forRoot(),
     TooltipModule.forRoot(),
     ModalModule.forRoot(),
+    RouterModule
   ],
   declarations: [NavigatorComponent, MessageComponent],
   exports: [NavigatorComponent, MessageComponent, BsDropdownModule, TooltipModule, ModalModule]

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sigin',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SiginComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route: Router) { }
 
   ngOnInit() {
+  }
+
+  goToLogin() {
+    this.route.navigate(['/security/login']);
   }
 
 }

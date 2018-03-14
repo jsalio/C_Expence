@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class IndexComponent implements OnInit {
 
   constructor() { }
-
+  title = 'CExpence';
   ngOnInit() {
   }
 
